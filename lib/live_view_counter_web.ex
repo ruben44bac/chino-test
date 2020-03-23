@@ -23,6 +23,7 @@ defmodule LiveViewCounterWeb do
 
       import Plug.Conn
       import LiveViewCounterWeb.Gettext
+      import Phoenix.LiveView.Controller
       alias LiveViewCounterWeb.Router.Helpers, as: Routes
     end
   end
@@ -42,8 +43,7 @@ defmodule LiveViewCounterWeb do
       import LiveViewCounterWeb.ErrorHelpers
       import LiveViewCounterWeb.Gettext
       alias LiveViewCounterWeb.Router.Helpers, as: Routes
-
-      import Phoenix.LiveView, only: [live_render : 2, live_render: 3]
+      import Phoenix.LiveView.Helpers
     end
   end
 
@@ -52,7 +52,7 @@ defmodule LiveViewCounterWeb do
       use Phoenix.Router
       import Plug.Conn
       import Phoenix.Controller
-      import Phonix.LiveView.Router
+      import Phoenix.LiveView.Router
     end
   end
 

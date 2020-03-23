@@ -10,7 +10,8 @@ defmodule LiveViewCounterWeb.Endpoint do
     signing_salt: "gXFPzr1+"
   ]
 
-  socket"/live", Phoenix.LiveView.Socket
+  socket "/live", Phoenix.LiveView.Socket,
+    websocket: [connect_info: [session: @session_options]]
 
   socket "/socket", LiveViewCounterWeb.UserSocket,
     websocket: true,
