@@ -40,6 +40,7 @@ defmodule LiveViewCounter.MixProject do
       {:jason, "~> 1.0"},
       {:plug_cowboy, "~> 2.0"},
       {:phonix_live_view, github: "phoenixframework/phonix_live_view"}
+
     ]
   end
 end
