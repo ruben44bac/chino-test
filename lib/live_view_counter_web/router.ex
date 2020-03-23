@@ -9,7 +9,7 @@ defmodule LiveViewCounterWeb.Router do
     plug :fetch_live_flash
     plug :protect_from_forgery
     plug :put_secure_browser_headers
-    plug :put_layout,{Live_ViewCounterWeb.LayoutView, :app}
+    plug :put_layout,{LiveViewCounterWeb.LayoutView, :app}
   end
 
   pipeline :api do
